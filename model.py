@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import os
 #import cv2
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 from skimage.transform import resize
 from skimage.io import imread, imshow
@@ -38,14 +38,10 @@ def predict(filepath):
     prediction = model.predict(prepare(filepath))
     return labels[((prediction > 1)*0)[0][0]]
 
-imshow(image_path)
-# imshow(prepare(image_path))
-
 start = time.time()
-prediction = predict(image_path)
+for i in range(1000):
+   prediction = predict(image_path)
 end = time.time()
 
 print("Prediction", prediction)
-print("Time", end-start)
-
-
+print("Average running Time", (end-start)/1000.0, "seconds")

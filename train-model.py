@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import os
 #import cv2
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 from tensorflow.keras import layers
 from tensorflow.keras.layers import Input, Lambda, Dense, Flatten, Conv2D, MaxPooling2D, Dropout

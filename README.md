@@ -1,8 +1,14 @@
 # Eye-State-Detection
 
 ## Running the pretrained model
-For running the pretrained model just use the following command. You can also change the image path by 
-going to the file. Use the follwing command to run our model.
+First clone this project by giving the following command-
+
+```
+git clone https://github.com/AmQarni/Eye-State-Detection.git
+```
+
+Now, preapare the python environment and then for running the pretrained model just use the following command. You can also change the image path by 
+going to the file. 
 
 ```
 python3 model.py

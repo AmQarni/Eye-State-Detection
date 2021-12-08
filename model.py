@@ -36,11 +36,11 @@ def prepare(filepath):
 
 def predict(filepath):
     prediction = model.predict(prepare(filepath))
-    return labels[((prediction > 1)*0)[0][0]]
+    return labels[((prediction > .2)*1)[0][0]]
 
 start = time.time()
 for i in range(1000):
-   prediction = predict(image_path)
+    prediction = predict(image_path)
 end = time.time()
 
 print("Prediction", prediction)

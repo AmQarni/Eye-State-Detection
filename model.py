@@ -16,7 +16,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import tensorflow as tf
 
 model_dir = "model.h5"
-image_path = "./images/1.png"
+image_path = "./images/0.png"
 
 labels = ["Closed", "Open"]
 IMG_SIZE = 48
